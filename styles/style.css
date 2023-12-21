@@ -203,7 +203,35 @@ main {
   line-height: 28px; /* 175% */
   margin-bottom: 15px;
 }
-
+/* footer */
+footer {
+  background: #0a0826;
+  padding: 40px 100px;
+  color: white;
+  text-align: center;
+}
+footer h2 {
+  color: #fff;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+footer p {
+  color: #d9dbe1;
+  font-feature-settings: 'liga' off;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
+footer .icon i {
+  padding: 5px 10px;
+  color: white;
+}
 /* responsive style */
 /* mobile or small devices responsive */
 @media screen and (max-width: 576px) {
@@ -284,6 +312,12 @@ main {
   }
   .featured .img img {
     width: 100%;
+  }
+  footer {
+    background: #0a0826;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
   }
 }
 
