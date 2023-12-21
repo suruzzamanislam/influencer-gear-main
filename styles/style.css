@@ -94,6 +94,88 @@ nav ul li a {
   border-radius: 50%;
   padding: 10px;
 }
+/* main section style */
+main {
+  padding: 20px 100px;
+}
+.platform {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 35px;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 40px rgb(233 223 223);
+}
+.platform .img {
+  width: 100%;
+}
+.platform .img img {
+  width: 100%;
+}
+/* collection style */
+.collection {
+  padding: 30px 0;
+}
+.collection h1 {
+  color: #3a3a3a;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px; /* 250% */
+  text-align: center;
+  margin-bottom: 15px;
+}
+.collection .card-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.collection .card {
+  padding: 15px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card img {
+  width: 100%;
+}
+.card h2 {
+  color: #18191f;
+  font-feature-settings: 'liga' off;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 142.857% */
+}
+.card .rate {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 36px */
+}
+.card p {
+  max-width: 196px;
+}
+.icon i {
+  color: #fb8200;
+}
+.icon span {
+  color: #5e6366;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: 0.1px;
+}
 
 /* responsive style */
 /* mobile or small devices responsive */
@@ -135,6 +217,19 @@ nav ul li a {
   .hero-img img {
     width: 100%;
   }
+  .platform {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    padding: 5px 10px;
+    justify-content: center;
+  }
+  main {
+    padding: 10px 20px;
+  }
+  /* collection */
+  .collection .card-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* tablet or meduim devices responsive */
@@ -159,5 +254,12 @@ nav ul li a {
   .hero-content h1 {
     font-size: 48px;
     line-height: 55px;
+  }
+  main {
+    padding: 15px 50px;
+  }
+  /* collection */
+  .collection .card-box {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
